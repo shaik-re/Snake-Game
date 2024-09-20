@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modeling</title>
+</head>
+<body>
+    <!--write id-->
+    <h2 id="h2"></h2>
+
+    <!--write class name in div-->
+    <div class="para"> </div>
+
+    <!--write tags-->
+    <p></p>
+
+    <!--write query-->
+    <div class="qu"></div>
+
+    <!--write query SelectorAll-->
+    <p class="qal"></p>
+    <p class="qul"></p>
+    <p class="qul"></p>
+    <p class="qul"></p>
+
+    <script>
+        document.getElementById('h2').innerHTML="HTML Course";
+        document.getElementById('h2').style.backgroundColor="pink";
+        document.getElementById('h2').style.backgroundColor="red";
+
+        let pa = document.getElementsByClassName("para");
+        if(pa.length){
+            pa[0].innerHTML="Hello";
+            pa[0].style.backgroundColor="brown";
+        }
+
+        let tag = document.getElementsByTagName('p');
+        if(pa.length>0){
+            tag[0].innerHTML="Tag Reference";
+            tag[0].style.backgroundColor="green";
+            tag[0].style.backgroundColor="gray";
+        }
+
+        let ar = document.querySelector('.qu');
+        if(qr){
+            qr.innerHTML="query selector"
+        }
+
+        let qa = document.querySelectorAll('.qual');
+        qa.forEach((element){
+            element.innerHTML="query selectorall"
+        })
+
+    </script>
+    
+</body>
+</html>

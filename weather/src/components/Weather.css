@@ -1,0 +1,78 @@
+.weather {
+    place-self: center;  
+    width: 80%; /* Adjust the width of the container */
+    max-width: 600px; /* Optional max width */
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    background-size: cover; /* Make background cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .search-bar input {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: rgb(236, 24, 187); /* Bright color for the text */
+    background: rgb(225, 181, 181); /* Light background color */
+    font-size: 18px;
+  }
+  
+  .search-bar img {
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%; /* Make the icon circular */
+    background-color: rgb(222, 207, 236); /* Light background for the icon */
+    cursor: pointer; /* Pointer on hover */
+  }
+  
+  .weather-icon {
+    width: 150px; /* Set width for weather icon */
+    margin: 30px;
+  }
+  
+  .temperature {
+    color: white; /* White color for temperature text */
+    font-size: 80px; /* Large font size for visibility */
+    line-height: 1; /* Line height for better spacing */
+  }
+  
+  .location {
+    color: white; /* White color for location text */
+    font-size: 40px; /* Slightly smaller than temperature */
+  }
+  .weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+  }
+  .weather-data .col span{
+    display: block;
+    font-size: 16px;
+  }
+  .weather-data .col img{
+    width: 26px;
+    margin-top: 10px;
+  }
+  

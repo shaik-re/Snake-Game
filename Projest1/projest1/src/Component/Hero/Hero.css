@@ -1,0 +1,200 @@
+.hero {
+    margin: 0px 120px;
+    margin-top: 270px;
+}
+
+.hero-text {
+    color: blue;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 130px;
+}
+
+.hero-explore {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+    width: fit-content;
+    margin-top: 70px;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    background-color: rgb(226, 211, 240);
+    cursor: pointer;
+}
+
+.hero-explore p {
+    color: rgb(29, 50, 43);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-dot-play {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-dots {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+.hero-dot {
+    width: 15px;
+    height: 15px;
+    background-color: aliceblue;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+.hero-dot.orange {
+    background-color: orangered;
+}
+
+.hero-play {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-play p {
+    color: aliceblue;
+    font-size: 19px;
+}
+
+.hero-form {
+    margin-top: 20px; /* Space above the form */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 20px; /* Space inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero-form h3 {
+    color: #000f38; /* Header color */
+    margin-bottom: 15px; /* Space below the header */
+    font-size: 24px; /* Font size for the header */
+    text-align: center; /* Center the header */
+}
+
+.hero-form input,
+.hero-form textarea {
+    padding: 10px; /* Padding inside input and textarea */
+    margin: 10px 0; /* Space around inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+/* Change border color on focus */
+.hero-form input:focus,
+.hero-form textarea:focus {
+    border-color: #4a90e2; /* Border color when focused */
+    outline: none; /* Remove default outline */
+}
+
+.hero-form button {
+    background-color: #4a90e2; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.hero-form button:hover {
+    background-color: #357ABD; /* Darker shade on hover */
+}
+
+.form-result {
+    margin-top: 10px; /* Space above the result message */
+    color: green; /* Feedback message color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the message */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero {
+        margin: 0 80px; /* Reduce side margins */
+        margin-top: 200px; /* Reduce top margin */
+    }
+
+    .hero-text {
+        font-size: 32px; /* Smaller font size for larger screens */
+        line-height: 100px; /* Adjust line height */
+    }
+
+    .hero-explore {
+        gap: 30px; /* Reduce gap between items */
+        padding-left: 20px; /* Reduce padding */
+    }
+
+    .hero-explore p {
+        font-size: 18px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        margin: 0 20px; /* Reduce margin on smaller screens */
+        margin-top: 150px; /* Adjust top margin */
+    }
+
+    .hero-text {
+        font-size: 24px; /* Smaller font size for mobile */
+        line-height: 60px; /* Adjust line height */
+    }
+
+    .hero-explore {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items */
+        width: 100%; /* Full width */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .hero-explore p {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .hero-dot-play {
+        flex-direction: column; /* Stack dots and play button vertically */
+        align-items: center; /* Center items */
+    }
+
+    .hero-play {
+        margin-top: 20px; /* Space above play button */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .hero-form {
+        margin: 10px 0; /* Reduce margin */
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    .hero-form h3 {
+        font-size: 20px; /* Smaller font size for the header */
+    }
+
+    .hero-form input,
+    .hero-form textarea {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+
+    .hero-form button {
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+
+    .form-result {
+        font-size: 14px; /* Smaller font size for result message */
+    }
+}
+
